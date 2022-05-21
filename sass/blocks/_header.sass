@@ -9,6 +9,9 @@
     justify-content: space-between
     padding-top: 40px
     padding-bottom: 40px
+    // первоначально скрываем кнопку
+    &__menu-button
+      display: none
   &-button
     background-color: $dark
   &-menu
@@ -25,11 +28,13 @@
       // убрать подчеркивания у ссылок
       text-decoration: none
       text-transform: uppercase
-.logo
-  width: 177px
-  &__img
-    width: 100%
-    height: 40px
+      font-size: 14px
+      line-height: 18px
+  .logo
+    width: 177px
+    &__img
+      width: 100%
+      height: 40px
 .search
   display: flex
   position: relative

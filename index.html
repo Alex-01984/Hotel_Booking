@@ -8,6 +8,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&family=Nunito:wght@400;700;800&display=swap"
     rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Hotel booking</title>
 </head>
@@ -26,10 +28,16 @@
             <img src="/img/search.svg" alt="Icon: search" class="search__img">
           </button>
         </form>
-        <a href="#" class="user">
+        <a href="#" class="user navbar__user">
           <img src="img/avatar.png" alt="avatar" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
+        <!-- ./user -->
+        <button class="menu-button navbar-top__menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
       </div>
       <!-- ./navbar-top -->
     </div>
@@ -65,6 +73,79 @@
     </div>
     <!-- ./navbar-button-->
   </header>
+  <!-- ./navbar-->
+
+  <nav class="breadcrumb">
+    <div class="container">
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-list__item">
+          <a href="" class="breadcrumb-list__link">Home</a>
+        </li>
+        <li class="breadcrumb-list__item">
+          <a href="" class="breadcrumb-list__link">Flash Offers</a>
+        </li>
+        <li class="breadcrumb-list__item">
+          Grand Hilton Hotel
+        </li>
+      </ul>
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- /.breadcrumb -->
+  <section class="hotel">
+    <div class="container">
+      <div class="hotel-info">
+        <div class="hotel-info__text">
+          <div class="hotel-wrapper">
+            <div class="stars">
+              <img src="img/star.svg" alt="star" width="12px">
+              <img src="img/star.svg" alt="star" width="12px">
+              <img src="img/star.svg" alt="star" width="12px">
+              <img src="img/star.svg" alt="star" width="12px">
+              <img src="img/star.svg" alt="star" width="12px">
+            </div>
+            <h1 class="hotel-name hotel-info__name">Grand Hilton Hotel</h1>
+            <span class="offer hotel-info__offer">Flash Offer</span>
+          </div>
+          <p class="hotel-description">Half-board All/Kompimentary Actvities+Child Stays Free</p>
+        </div>
+        <!-- /.hotel-info__text -->
+        <div class="rating hotel-info__rating">
+          <span class="rating__text">User Ratting</span>
+          <span class="rating__counter">4.5/5</span>
+        </div>
+        <!-- /.hotel-info__rating -->
+      </div>
+      <!-- /.hotel-info -->
+
+      <div class="hotel-grid">
+        <div class="slider">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="img/slaide.jpg" alt="slide"></div>
+              <div class="swiper-slide"><img src="img/slaide.jpg" alt="slide"></div>
+              <div class="swiper-slide"><img src="img/slaide.jpg" alt="slide"></div>
+            </div>
+            <!-- If we need pagination 
+            <div class="swiper-pagination"></div> -->
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+          </div><!-- /.swiper-->
+        </div> <!-- /.slider -->
+      </div>
+    </div>
+    <!-- /.hotel-container -->
+  </section>
+
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
