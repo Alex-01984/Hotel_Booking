@@ -115,9 +115,8 @@
           <span class="rating__counter">4.5/5</span>
         </div>
         <!-- /.hotel-info__rating -->
-      </div>
-      <!-- /.hotel-info -->
-
+      </div>   <!-- /.hotel-info -->
+    
       <div class="hotel-grid">
         <div class="slider">
           <!-- Slider main container -->
@@ -133,15 +132,50 @@
             <div class="swiper-pagination"></div> -->
 
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="slider-button slider-button-prev"><img src="img/web.svg" alt="img">
+            </div>
+            <div class="slider-button slider-button-next"><img src="img/web.svg" alt="img">
+            </div>
 
           </div><!-- /.swiper-->
         </div> <!-- /.slider -->
-      </div>
-    </div>
-    <!-- /.hotel-container -->
-  </section>
+        <div class="hotel-right">
+          <div class="booking">
+            <div class="booking__info">
+              <div class="booking__price">
+                <span class="booking__start">price start as</span>
+                <strong class="booking__pricetag">$ 8500</strong>
+                <span class="booking__per-room">per room / night</span>
+              </div> <!-- /.booking__price (flex)-->
+              <div class="booking__room">
+                <div class="booking__text">
+                  <img src="img/sofa.svg" width="16px" alt="Icon: User" class="booking__icon">
+                  <span class="booking__description">2x Guests</span>
+                </div>
+                <div class="booking__text">
+                  <img src="img/sofa2.svg" width="16px" alt="Icon: User" class="booking__icon">
+                  <span class="booking__description">1x Room</span>
+                </div>
+              </div>
+            </div> <!-- /.booking__info -->
+  
+            <div class="booking__call-center">
+              <div class="booking__heading">Quic Booking</div>
+              <a class="booking__number" href="tel:12100">
+              <img src="img/sofa.svg" width="16px"  alt="Icon: phone">
+              <span class="booking__num">12100</span>
+              </a>
+            </div> <!-- /.call-center-->
+            <button class="button booking__button">View other options</button>
+          </div> <!-- /.booking -->
+          <div class="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa2d5f918f5b7f70d9a2092a471f2f7c02fd1eb3c783732fd47611cccfeb0d648&amp;source=constructor" width="347" height="213" frameborder="2"></iframe>
+          </div>
+        </div>
+      </div> <!-- /.hotel-grid  (flex)-->
+    </div> <!-- /.container -->
+
+  </section> <!-- /.hotel -->
 
   <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
   <script src="js/swiper-bundle.min.js"></script>
